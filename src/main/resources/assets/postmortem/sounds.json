@@ -1,0 +1,20 @@
+{
+  "are_you_sure": {
+    "subtitle": "subtitles.are_you_sure",
+    "sounds": [
+      {
+        "name": "postmortem:areyousure",
+        "stream": false
+      }
+    ]
+  },
+  "omni": {
+    "subtitle": "subtitles.omni",
+    "sounds": [
+      {
+        "name": "postmortem:omni",
+        "stream": true
+      }
+    ]
+  }
+}

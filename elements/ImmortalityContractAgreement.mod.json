@@ -1,0 +1,47 @@
+{
+  "_fv": 69,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 144,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "contract_gui_warning.png",
+          "use1Xscale": false,
+          "x": 141,
+          "y": 26
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_sign_contract_button",
+          "image": "sign_contract_button.png",
+          "hoveredImage": "sign_contract_button_active.png",
+          "onClick": {
+            "name": "SignImmortalityContract"
+          },
+          "x": 177,
+          "y": 152
+        }
+      }
+    ],
+    "onOpen": {
+      "name": "ImmortalityContractAgreementThisGUIIsOpened"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

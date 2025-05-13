@@ -1,0 +1,1159 @@
+{
+  "mod_elements": [
+    {
+      "name": "GhostOverlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ghost_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/postmortem/client/screens/GhostOverlayOverlay.java"
+        ]
+      }
+    },
+    {
+      "name": "GhostOverlayDisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ghost_overlay_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/postmortem/procedures/GhostOverlayDisplayOverlayIngameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HostRender",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "host_render",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/postmortem/procedures/HostRenderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OnPlayerRespawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_player_respawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/postmortem/procedures/OnPlayerRespawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OnPlayerDeath",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_player_death",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/postmortem/procedures/OnPlayerDeathProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PossessOverlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "possess_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/postmortem/client/screens/PossessOverlayOverlay.java"
+        ]
+      }
+    },
+    {
+      "name": "PossessKeybind",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "possess_keybind",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/postmortem/network/PossessKeybindMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "ReturnPossessKeybind",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_possess_keybind",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/postmortem/procedures/ReturnPossessKeybindProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "PossessOverlayDisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "possess_overlay_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/postmortem/procedures/PossessOverlayDisplayOverlayIngameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PossessKeybindOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "possess_keybind_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/postmortem/procedures/PossessKeybindOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HostEffects",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "host_effects",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/postmortem/procedures/HostEffectsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CurePlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cure_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/postmortem/procedures/CurePlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CureZombiePlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cure_zombie_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/postmortem/procedures/CureZombiePlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "UndeadOverlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "undead_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/postmortem/client/screens/UndeadOverlayOverlay.java"
+        ]
+      }
+    },
+    {
+      "name": "UndeadOverlayDisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "undead_overlay_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/postmortem/procedures/UndeadOverlayDisplayOverlayIngameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HostRenderArms",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "host_render_arms",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/postmortem/procedures/HostRenderArmsProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "GhostRender",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ghost_render",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/postmortem/procedures/GhostRenderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ImmortalityContract",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "immortality_contract",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/postmortem/item/ImmortalityContractItem.java",
+          "src/main/java/net/mcreator/postmortem/item/inventory/ImmortalityContractInventoryCapability.java",
+          "src/main/resources/assets/postmortem/models/item/immortality_contract.json"
+        ]
+      }
+    },
+    {
+      "name": "ImmortalityContractAgreement",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "immortality_contract_agreement",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/postmortem/client/gui/ImmortalityContractAgreementScreen.java",
+          "src/main/java/net/mcreator/postmortem/world/inventory/ImmortalityContractAgreementMenu.java",
+          "src/main/java/net/mcreator/postmortem/network/ImmortalityContractAgreementButtonMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "SignImmortalityContract",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sign_immortality_contract",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/postmortem/procedures/SignImmortalityContractProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HUDFix",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hud_fix",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/postmortem/procedures/HUDFixProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ImmortalityContractAgreementThisGUIIsOpened",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "immortality_contract_agreement_this_gui_is_opened",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/postmortem/procedures/ImmortalityContractAgreementThisGUIIsOpenedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HealZombiePlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heal_zombie_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/postmortem/procedures/HealZombiePlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CheckPlayerInSunlight",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_in_sunlight",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/postmortem/procedures/CheckPlayerInSunlightProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GiveImmContract",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "give_imm_contract",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/postmortem/procedures/GiveImmContractProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AreYouSureRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "are_you_sure_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/postmortem/procedures/AreYouSureRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AreYouSureRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "are_you_sure_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/postmortem/recipes/are_you_sure_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "AreYouSure",
+      "type": "musicdisc",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "are_you_sure",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/postmortem/models/item/are_you_sure.json",
+          "src/main/java/net/mcreator/postmortem/item/AreYouSureItem.java"
+        ]
+      }
+    },
+    {
+      "name": "TotemOfRebirth",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "totem_of_rebirth",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/postmortem/models/item/totem_of_rebirth.json",
+          "src/main/java/net/mcreator/postmortem/item/TotemOfRebirthItem.java"
+        ]
+      }
+    },
+    {
+      "name": "CrackedTotemOfRebirth",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cracked_totem_of_rebirth",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/postmortem/item/CrackedTotemOfRebirthItem.java",
+          "src/main/resources/assets/postmortem/models/item/cracked_totem_of_rebirth.json"
+        ]
+      }
+    },
+    {
+      "name": "CleansedDiamond",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cleansed_diamond",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/postmortem/models/item/cleansed_diamond.json",
+          "src/main/java/net/mcreator/postmortem/item/CleansedDiamondItem.java"
+        ]
+      }
+    },
+    {
+      "name": "CleansedDiamondRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cleansed_diamond_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/postmortem/recipes/cleansed_diamond_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "TotemOfRebirthRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "totem_of_rebirth_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/postmortem/recipes/totem_of_rebirth_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "CrackedTotemOfRebirthInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cracked_totem_of_rebirth_info",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "AncientDagger",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ancient_dagger",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/postmortem/models/item/ancient_dagger.json",
+          "src/main/java/net/mcreator/postmortem/item/AncientDaggerItem.java"
+        ]
+      }
+    },
+    {
+      "name": "AncientDaggerFoundLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ancient_dagger_found_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/postmortem/loot_tables/chests/ancient_dagger_found_loot.json"
+        ]
+      }
+    },
+    {
+      "name": "DropCrackedRebirthTotem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drop_cracked_rebirth_totem",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/postmortem/procedures/DropCrackedRebirthTotemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ImmContractLootFromMansion",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "imm_contract_loot_from_mansion",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/postmortem/loot_tables/chests/imm_contract_loot_from_mansion.json"
+        ]
+      }
+    },
+    {
+      "name": "TotemOfRebirthRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "totem_of_rebirth_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/postmortem/procedures/TotemOfRebirthRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HealSkeletonPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heal_skeleton_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/postmortem/procedures/HealSkeletonPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RefleshingApple",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "refleshing_apple",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/postmortem/item/RefleshingAppleItem.java",
+          "src/main/resources/assets/postmortem/models/item/refleshing_apple.json"
+        ]
+      }
+    },
+    {
+      "name": "RefleshingApplePlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "refleshing_apple_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/postmortem/procedures/RefleshingApplePlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CureSkeletonPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cure_skeleton_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/postmortem/procedures/CureSkeletonPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RefleshingAppleRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "refleshing_apple_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/postmortem/recipes/refleshing_apple_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Postmortem",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "postmortem",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/postmortem/command/PostmortemCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "PostmortemSetGhost",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "postmortem_set_ghost",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/postmortem/procedures/PostmortemSetGhostProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PostmortemSetHost",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "postmortem_set_host",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/postmortem/procedures/PostmortemSetHostProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PostmortemSetDeathType",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "postmortem_set_death_type",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/postmortem/procedures/PostmortemSetDeathTypeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HostHitEffects",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "host_hit_effects",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/postmortem/procedures/HostHitEffectsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "IsGhost",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "Host",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "DeathX",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "DeathY",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "DeathZ",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "DeathType",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "IsInSun",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "HasRecievedImmContract",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    }
+  ],
+  "sound_elements": [
+    {
+      "name": "are_you_sure",
+      "files": [
+        "areyousure"
+      ],
+      "category": "master",
+      "subtitle": "Are You Sure?"
+    },
+    {
+      "name": "omni",
+      "files": [
+        "omni"
+      ],
+      "category": "record",
+      "subtitle": "OMNI MAN, WHERE IS HE? WHERE IS OMNI MAN?"
+    }
+  ],
+  "tag_elements": {
+    "ITEMS:farmersdelight:tools/knives": [
+      "CUSTOM:AncientDagger"
+    ],
+    "ENTITIES:mod:possessable_mobs": [
+      "EntityZombie",
+      "EntitySkeleton",
+      "EntityDrowned",
+      "EntityHusk",
+      "EntityStray",
+      "EntityWitherSkeleton"
+    ],
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:AncientDagger"
+    ],
+    "ITEMS:minecraft:music_discs": [
+      "~CUSTOM:AreYouSure"
+    ],
+    "ITEMS:forge:tools/knives": [
+      "CUSTOM:AncientDagger"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item.postmortem.are_you_sure.desc": "Are You Sure?",
+      "item.postmortem.totem_of_rebirth": "Totem Of Rebirth",
+      "gui.postmortem.possess_overlay.label_r": "R",
+      "jei.postmortem.cracked_totem_of_rebirth_info": "Drops from Evokers when Killed with an Ancient Dagger.",
+      "item.postmortem.refleshing_apple": "Refleshing Apple",
+      "subtitles.are_you_sure": "Are You Sure?",
+      "item.postmortem.cleansed_diamond": "Cleansed Diamond",
+      "key.postmortem.possess_keybind": "Possess Entity",
+      "item.postmortem.immortality_contract": "Contract of Soul-Shattering",
+      "item.postmortem.ancient_dagger": "Ancient Dagger",
+      "subtitles.omni": "OMNI MAN, WHERE IS HE? WHERE IS OMNI MAN?",
+      "item.postmortem.are_you_sure": "Are You Sure?",
+      "gui.postmortem.possess_overlay.label_r1": "R",
+      "item.postmortem.cracked_totem_of_rebirth": "Cracked Totem Of Rebirth"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "postmortem",
+    "modName": "Postmortem",
+    "version": "1.0.2",
+    "author": "Autumn",
+    "websiteURL": "https://ko-fi.com/autumnly",
+    "license": "All Rights Reserved",
+    "serverSideOnly": false,
+    "modPicture": "postmortem_logo",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "kleidersplayerrenderer",
+      "pehkui",
+      "jei"
+    ],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Made by Autumnly24, Inspired by Requiem",
+    "modElementsPackage": "net.mcreator.postmortem"
+  },
+  "mcreatorVersion": 202400342716
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "postmortem:cracked_totem_of_rebirth"
+    },
+    {
+      "item": "postmortem:cleansed_diamond"
+    }
+  ],
+  "result": {
+    "item": "postmortem:totem_of_rebirth",
+    "count": 1
+  }
+}

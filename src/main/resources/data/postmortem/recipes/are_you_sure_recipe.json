@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "postmortem:immortality_contract"
+  },
+  "result": "postmortem:are_you_sure"
+}

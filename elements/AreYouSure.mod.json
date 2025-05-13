@@ -1,0 +1,25 @@
+{
+  "_fv": 69,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Are You Sure?",
+    "rarity": "UNCOMMON",
+    "texture": "areyousure",
+    "description": "Are You Sure?",
+    "creativeTabs": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "CUSTOM:omni"
+    },
+    "lengthInTicks": 600,
+    "analogOutput": 0,
+    "onRightClickedInAir": {
+      "name": "AreYouSureRightclicked"
+    }
+  }
+}

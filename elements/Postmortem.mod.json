@@ -1,0 +1,10 @@
+{
+  "_fv": 69,
+  "_type": "command",
+  "definition": {
+    "commandName": "postmortem",
+    "type": "STANDARD",
+    "permissionLevel": "3",
+    "argsxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"args_start\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"literal\"><field name=\"name\">set_ghost</field><statement name=\"args\"><block type=\"entity\"><field name=\"name\">name</field><field name=\"type\">player</field><statement name=\"args\"><block type=\"logic\"><field name=\"name\">is_ghost</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">PostmortemSetGhost</field></block></statement></block></statement></block></statement><next><block type=\"literal\"><field name=\"name\">set_host</field><statement name=\"args\"><block type=\"entity\"><field name=\"name\">name</field><field name=\"type\">player</field><statement name=\"args\"><block type=\"number_min_max\"><field name=\"name\">host</field><field name=\"min\">0</field><field name=\"max\">6</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">PostmortemSetHost</field></block></statement></block></statement></block></statement><next><block type=\"literal\"><field name=\"name\">set_death_type</field><statement name=\"args\"><block type=\"entity\"><field name=\"name\">name</field><field name=\"type\">player</field><statement name=\"args\"><block type=\"number_min_max\"><field name=\"name\">death_type</field><field name=\"min\">0</field><field name=\"max\">1</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">PostmortemSetDeathType</field></block></statement></block></statement></block></statement></block></next></block></next></block></next></block></xml>"
+  }
+}

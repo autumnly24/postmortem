@@ -1,0 +1,10 @@
+{
+  "type": "postmortem:postmortem_loot_modifier",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/ancient_city"
+    }
+  ],
+  "lootTable": "postmortem:chests/ancient_dagger_found_loot"
+}
