@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  a",
+    " ab",
+    "c  "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:netherite_scrap"
+    },
+    "b": {
+      "item": "minecraft:gold_ingot"
+    },
+    "c": {
+      "item": "minecraft:echo_shard"
+    }
+  },
+  "result": {
+    "item": "postmortem:ancient_dagger",
+    "count": 1
+  }
+}

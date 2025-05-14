@@ -41,12 +41,7 @@
         "files": [
           "src/main/java/net/mcreator/postmortem/procedures/HostRenderProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       }
     },
     {
@@ -718,18 +713,6 @@
       }
     },
     {
-      "name": "AncientDaggerFoundLoot",
-      "type": "loottable",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ancient_dagger_found_loot",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/postmortem/loot_tables/chests/ancient_dagger_found_loot.json"
-        ]
-      }
-    },
-    {
       "name": "DropCrackedRebirthTotem",
       "type": "procedure",
       "compiles": true,
@@ -764,18 +747,6 @@
             "name": "world",
             "type": "world"
           }
-        ]
-      }
-    },
-    {
-      "name": "ImmContractLootFromMansion",
-      "type": "loottable",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "imm_contract_loot_from_mansion",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/postmortem/loot_tables/chests/imm_contract_loot_from_mansion.json"
         ]
       }
     },
@@ -1017,6 +988,18 @@
             "name": "sourceentity",
             "type": "entity"
           }
+        ]
+      }
+    },
+    {
+      "name": "AncientDaggerRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ancient_dagger_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/postmortem/recipes/ancient_dagger_recipe.json"
         ]
       }
     }

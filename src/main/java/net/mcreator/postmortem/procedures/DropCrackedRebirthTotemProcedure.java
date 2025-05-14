@@ -7,6 +7,7 @@ import net.minecraftforge.event.entity.living.LivingDeathEvent;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.monster.Vindicator;
 import net.minecraft.world.entity.monster.Evoker;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.LivingEntity;
@@ -36,6 +37,12 @@ public class DropCrackedRebirthTotemProcedure {
 		if (entity instanceof Evoker && (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PostmortemModItems.ANCIENT_DAGGER.get()) {
 			if (world instanceof ServerLevel _level) {
 				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(PostmortemModItems.CRACKED_TOTEM_OF_REBIRTH.get()));
+				entityToSpawn.setPickUpDelay(10);
+				_level.addFreshEntity(entityToSpawn);
+			}
+		} else if (entity instanceof Vindicator && (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PostmortemModItems.ANCIENT_DAGGER.get()) {
+			if (world instanceof ServerLevel _level) {
+				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(PostmortemModItems.IMMORTALITY_CONTRACT.get()));
 				entityToSpawn.setPickUpDelay(10);
 				_level.addFreshEntity(entityToSpawn);
 			}

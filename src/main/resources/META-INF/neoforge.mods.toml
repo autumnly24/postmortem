@@ -1,0 +1,53 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="postmortem"
+version="1.0.2"
+displayName="Postmortem"
+displayURL="https://ko-fi.com/autumnly"
+logoFile="logo.png"
+credits="Made by Autumnly24, Inspired by Requiem"
+authors="Autumn"
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+[[dependencies.postmortem]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.65,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.postmortem]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+ordering="AFTER"
+side="BOTH"
+
+
+[[dependencies.postmortem]]
+modId="kleidersplayerrenderer"
+type="optional"
+versionRange="[0,)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.postmortem]]
+modId="pehkui"
+type="optional"
+versionRange="[0,)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.postmortem]]
+modId="jei"
+type="optional"
+versionRange="[0,)"
+ordering="NONE"
+side="BOTH"
+
+
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration
